@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    
+    <title> Liên hệ </title>
+</head>
+<body>
+    <header>
+        <div class="logo">Fresh Garden</div>
+        <div class="plant">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active" >Trang chủ </a></li>
+                <li><a href="products.html" class="active">Sản phẩm</a></li>
+                <li><a href="about.html" class="active">Về chúng tôi</a></li>
+                <li><a href="contact.html" class="active">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section>
+       
+        <div class="fc flex" >
+            <form action="">
+                <fieldset >
+                <div class="fc_form-text">
+                    <h1>Liên hệ </h1>
+                   
+                </div>
+                <div class="fc_form-input">
+                    <label for="fullName"> Họ và tên</label><br>
+                    <input type="text" name="fullName" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="userEmail" required><br>
+                    <label for="help">Chúng tôi có thể giúp gì được cho bạn?</label><br>
+                   
+                    
+                    <textarea class="message" name="message" placeholder="Nội dung"></textarea>
+                </div>
+                
+            </fieldset>
+            <div class="fc_form-text">
+                <button class="submit-btn">Submit</button>
+            </div>
+            </form>
+        </div>
+        </section>
+      
+    <footer class="footer">
+        <p>🌱</p>
+        <p>copyright © group 2024</p>
+    </footer>
+
+    <script>
+        let plant = document.querySelector(".plant");
+        plant.onclick = function(){
+            let navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    
+  </body>
+
+</html>
