@@ -1,0 +1,154 @@
+.heading {
+    font-size: 3rem; 
+    color:#043017 ;
+    text-align:center;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem  1.5rem rgab(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem soild rgba(0,0,0,.1);
+    position:relative;
+
+}
+.products .box-container .box:hover {
+    transform: scale(1.05);
+}
+
+.products .box-container .box .discount{
+    position:absolute;
+    top:0.7rem; left: 5rem;
+    padding:.5rem 1rem;
+    font-size: 1.5rem;
+    color:var(--pink);
+    background: rgba(44, 244, 51, 0.693);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+    position:relative;
+    text-align:center;
+    padding-top: 2rem;
+    overflow:25rem; 
+}
+
+
+.products .box-container .box .image img{
+    height:25rem;
+}
+
+.products .box-container .box .image img{
+    width :20rem;
+}
+.products .box-container .box .image img{
+    border-radius: 0.5rem;
+    transform: scale(1.1);
+}
+
+
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+
+}
+
+.products .box-container .box .content h3{
+    font-size: 3.5 rem;
+    color: #333
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5 rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5 rem;
+    color:#999;
+    font-weight: lighter;
+   text-decoration:line-through ;
+}
+
+
+/* css sản phẩm 1*/
+.product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-image img {
+    width: 400px;
+    border-radius: 10px; /* bo góc*/
+    margin-right: 20px;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    color: #043017;
+}
+
+.product-info .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;/* khoảng cách 10 pixel cho lề trên và lề dưới, và 0 pixel cho lề trái và lề phải.*/
+}
+
+.product-info .price span {
+    font-size: 1.5rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product-info p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product-info button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer; /*thay đổi hình dạng con trỏ chuột khi con trỏ di chuyển qua phần tử đó trên trình duyệt*/
+}
+
+
+/**/
+.giohang {
+    position: fixed;
+    border-radius: 10px;
+    right: 10px;
+    top: 10px;
+    height: 60px;
+    padding: 10px;
+}
+
+.giohang img {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
