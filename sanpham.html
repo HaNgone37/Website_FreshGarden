@@ -5,6 +5,7 @@
     <title>🌱Fresh Garden - Sản phẩm🌱</title>
     <link rel="stylesheet" href="CSS/css.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -16,17 +17,24 @@
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="products.html" class="active">Sản phẩm</a></li>
-                <li><a href="#about">Về chúng tôi</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+                <li>
+                    <a href="index.html" >Trang chủ</a>
+                </li>
+                <li>
+                    <a href="sanpham.html" class="active">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="about.html">Về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="contact.html">Liên hệ</a>
+                </li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#login"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
 
-
-
-    
 
     <section class="products" id="products ">
         <h1 class="heading"> Popular<span> Produtcs</span></h1>
@@ -185,12 +193,7 @@
         <p>copyright © group 2024</p>
     </footer>
 
-    <script>
-        let plant = document.querySelector(".plant");
-        plant.onclick = function(){
-            let navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
+    <script src="JS/index.js">
     </script>
 </body>
 </html>
