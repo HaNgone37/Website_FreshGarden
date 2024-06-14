@@ -22,6 +22,8 @@ header {
     position: relative;
 }
 
+
+/* Định dạng CSS cho nav bar */
 .logo {
     font-size: 28px;
     font-weight: bold;
@@ -64,7 +66,7 @@ header {
     font-size: 1.5rem;
 }
 
-/* Toggle button styling for small screens */
+/* Thiết kế nav bar -> nút toggle khi màn hình thu nhỏ */
 @media only screen and (max-width: 900px) {
     .plant {
         display: block;
@@ -88,7 +90,7 @@ header {
         background-color: #eff6f2;
         transition: 0.2s;
         overflow: hidden;
-        z-index: 1000;
+        z-index: 1000; /*này cho nav bar nổi lên trên mấy cái khác */
     }
 
     .nav-bar.active {
@@ -117,7 +119,7 @@ header {
     }
 }
 
-/* Home section styling */
+/* Định dạng CSS cho nội dung home */
 .home .content{
     max-width: 50rem;
 }
@@ -156,7 +158,7 @@ header {
     background: #a19898;
 }
 
-/* Footer styling */
+/* Định dạng cho Footer */
 .footer {
     padding: 2% 8%;
     width: 100%;
