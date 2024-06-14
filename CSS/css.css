@@ -32,9 +32,10 @@
 
 .products .box-container .box .discount{
     position:absolute;
-    top:1rem; left: 4.9rem;
-    padding:.7rem 1rem;
+    top:0.7rem; left: 5rem;
+    padding:.5rem 1rem;
     font-size: 1.5rem;
+    color:var(--pink);
     background: rgba(44, 244, 51, 0.693);
     z-index: 1;
     border-radius: .5rem;
@@ -49,7 +50,7 @@
 
 
 .products .box-container .box .image img{
-    height:20rem;
+    height:25rem;
 }
 
 .products .box-container .box .image img{
@@ -69,12 +70,13 @@
 }
 
 .products .box-container .box .content h3{
-    font-size: 2.5 rem;
+    font-size: 3.5 rem;
     color: #333
 }
 
 .products .box-container .box .content .price{
-    font-size: .5 rem;
+    font-size: 2.5 rem;
+    color:var(--pink);
     font-weight: bolder;
     padding-top: 1rem;
 }
@@ -86,53 +88,44 @@
    text-decoration:line-through ;
 }
 
-/* nd sản phẩm*/
 
+/* css sản phẩm 1*/
 .product-detail {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 20px;
 }
+
 .product-image img {
     width: 400px;
-    border-radius: 10px;
+    border-radius: 10px; /* bo góc*/
     margin-right: 20px;
 }
-.product-info {
-    max-width: 600px;
-    background-color: rgb(197, 242, 211);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 .product-info h1 {
     font-size: 2.5rem;
     color: #043017;
 }
+
 .product-info .price {
     font-size: 2rem;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 10px 0;/* khoảng cách 10 pixel cho lề trên và lề dưới, và 0 pixel cho lề trái và lề phải.*/
 }
+
 .product-info .price span {
     font-size: 1.5rem;
     color: #999;
     text-decoration: line-through;
     margin-left: 10px;
 }
-.product-info h2 {
-    font-size: 1.8rem;
-    color: #043017;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
+
 .product-info p {
-    margin-top: 5px;
     font-size: 1.2rem;
     color: #333;
-    text-align: justify;/*căn chỉnh văn bản sao cho các dòng đều chạm vào mép trái và mép phải của phần tử chứa*/
 }
+
 .product-info button {
     background-color: #28a745;
     color: white;
@@ -140,202 +133,22 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
-}
-.contact-info a {
-    display: inline-block;
-    color:black ;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
+    cursor: pointer; /*thay đổi hình dạng con trỏ chuột khi con trỏ di chuyển qua phần tử đó trên trình duyệt*/
 }
 
-.contact-info img {
-    width: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-.order-options {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Căn các phần tử con cách đều nhau */
-}
 
-.quantity {
-    display: flex;
-    align-items: center;
-}
-
-.quantity button {
-    background-color: #08f62b;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    font-size: 25px;
-}
-
-#product {
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-#add-to-cart-button {
-    background-color: #00ff66;
-    border: none;
-    color: #010101;
-    cursor: pointer;
-    padding: 13px 16px;
-    font-size: 17px;
-    border-radius: 5px;
-}
-
-#add-to-cart-button:hover {
-    background-color: #04850d;
-}
-/*khung cam kết */
-.commit{
-    max-width: 700px;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f4f4f4;
+/**/
+.giohang {
+    position: fixed;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 120px;
-}
-.commit h2 {
-    font-size: 1.5rem;
-    color: #043017;
-    margin-bottom: 10px;
-}
-.commit p {
-    font-size: 1rem;
-    color: #333;
-    margin: 5px 0;
-}
-/* khung nôi dung */
-.product-details1 {
-    max-width: 700px;
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 120px;
-}
-
-.product-details1 h2 {
-    font-size: 1.5rem;
-    color: #043017;
-    margin-bottom: 20px;
-}
-
-.product-details1 h3 {
-    font-size: 1.2rem;
-    color: #043017;
-    margin-bottom: 10px;
-    margin-top : 20px;
-}
-
-.product-details1 p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-
-/* sản phẩm cùng loại */
-.related-products {
-    padding: 20px;
-    text-align: center;
-}
-
-.related-products h2 {
-    font-size: 1.5rem;
-    color: #071e17;
-    text-align: left;
-}
-
-.products2 {
-    display: flex;
-    justify-content: flex-start; /* Canh chỉnh sang trái */
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.product1 {
-    text-align: center;
-    max-width: 300px;
-    margin: 0; 
-    margin-top: 15px;
-}
-
-.product1 img {
-    position:relative; 
-    width: 190px; /* Đảm bảo ảnh điều chỉnh tỷ lệ */
-    height: 190px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out; 
-}
-
-.product1 img:hover {
-    transform: scale(1.1); 
-}
-
-.product1 p {
-    font-size: 1rem;
-    color: #043017;
-    margin: 5px 0;
-}
-
-.product1 .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #043017;
-}
-
-/* sidebar */
-.sidebar {
-    position: absolute;
-    top: 552px; 
-    width: 300px;
-    background-color: #f4f4f4;
-    padding: 15px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    margin-left: 837px;
-}
-
-.sidebar h2 {
-    background-color: #4CAF50;
-    color: white;
+    right: 10px;
+    top: 10px;
+    height: 60px;
     padding: 10px;
-    text-align: center;
-    margin: 0 0 15px 0;
-    border-radius: 15px;
 }
 
-.sidebar .product3 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.sidebar .product3 img {
-    width: 95px;
-    height: 95px;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  
-}
-
-.sidebar .product3 img:hover {
-    transform: scale(1.1); 
+.giohang img {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
 }
