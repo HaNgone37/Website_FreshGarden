@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🌱Fresh Garden🌱</title>
+        <link rel="stylesheet" href="CSS/login.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Fresh Garden</div>
+            <div class="plant">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="sanpham.html">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Về chúng tôi</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Liên hệ</a>
+                    </li>
+                    <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="loginpage.html" class="active"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+        <div class="login">
+            <div class="login-form">
+                <h3>Đăng nhập</h3>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input id="loginMail" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input id="LoginPass" type="password" required>
+                        <label>Mật khẩu</label>
+                    </div>
+
+                    <div class="remeber-forgot">
+                        <label><input type="checkbox">
+                        Ghi nhớ tôi
+                        </label>
+                        <a href="#">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn">
+                        Đăng nhập
+                    </button>
+                    <div class="login-register">
+                        <p>Chưa có tài khoản?
+                        <a href="register.html" class="register-link">Đăng ký</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        Fresh Garden
+                    </a>
+                    <a href="" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        Fresh Garden
+                    </a>
+                    <a href="mailto:hango0307@gmail.com" target="_blank" class="social-icon">
+                        <i class="fa-regular fa-envelope"></i>        
+                        Fresh Garden
+                    </a>
+                    <a href="https://github.com/HaNgone37/Website_FreshGarden" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-github"></i>
+                        Fresh Garden
+                    </a>
+                </div>
+                <p>&copy; 2024 Group 3. All rights reserved</p>
+            </div>
+        </footer>
+
+        <script src="JS/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./JS/login.js"></script>
+    </body>
+</html>
