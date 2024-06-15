@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #eff6f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: relative;
+}
+
+
+/* Định dạng CSS cho nav bar */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #043017;
+}
+
+.plant {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    margin: 0 10px;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #043017;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background-color: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background-color: #fefefe;
+}
+
+.nav-bar ul li a i {
+    font-size: 1.5rem;
+}
+
+/* Thiết kế nav bar -> nút toggle khi màn hình thu nhỏ */
+@media only screen and (max-width: 900px) {
+    .plant {
+        display: block;
+        cursor: pointer;
+    }
+
+    .plant .line {
+        width: 30px;
+        height: 3px;
+        background-color: #120a0a;
+        margin: 6px;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #eff6f2;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 1000; /*này cho nav bar nổi lên trên mấy cái khác */
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li {
+        margin: 12px 0;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+/* Định dạng CSS cho nội dung home */
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#043017;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: #06632e;
+    padding: 1rem 0;
+    line-height: 1.5;
+    /* font-style: italic; */
+}
+
+.home .content p{
+    color:#fbf4f4;
+    font-size: 1.5rem;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fefefe;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.button:hover {
+    background: #a19898;
+}
+
+/* Định dạng cho Footer */
+.footer {
+    padding: 2% 8%;
+    width: 100%;
+    text-align: center;
+    background-color: #eff6f2;
+    color: #043017;
+    font-size: 20px;
+    position: relative;
+    justify-self: end;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.social-icons{
+    margin-bottom: 10px;
+}
+.social-icon:link{
+    color:#043017;
+}
+.social-icon:hover{
+    color: #1b5c07;
+}
+.social-icon:visited{
+    color: #043017;
+}
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+    section {
+        padding-top: 2rem;
+    }
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .social-icons{
+        display: flex;
+    }
+    .home{
+        background-image: url(../Images/2151022071.jpg);
+        background-position-y: top;
+    }
+}
+
+section {
+    padding: 2rem 9%;
+    position: relative;
+    z-index: 1;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../Images/anhnen9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+    z-index: 1;
+}
