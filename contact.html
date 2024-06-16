@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ🌱</title>
+        <link rel="icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="CSS/style.css">
+          <link rel="stylesheet" href="CSS/contactus.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
     
-    <title> Liên hệ </title>
-</head>
+
 <body>
+    
+    <div class="app">
     <header>
         <div class="logo">Fresh Garden</div>
         <div class="plant">
@@ -22,55 +25,59 @@
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="index.html" class="active" >Trang chủ </a></li>
-                <li><a href="products.html" class="active">Sản phẩm</a></li>
-                <li><a href="about.html" class="active">Về chúng tôi</a></li>
+                <li><a href="index.html" >Trang chủ </a></li>
+                <li><a href="product.html" >Sản phẩm</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
                 <li><a href="contact.html" class="active">Liên hệ</a></li>
+                 <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="loginpage.html"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
-   
-    <section>
-       
-        <div class="fc flex" >
-            <form action="">
-                <fieldset >
-                <div class="fc_form-text">
-                    <h1>Liên hệ </h1>
-                   
+    
+    <div class="container">
+        <div class="formBox">
+            <form>
+                <h2>Liên hệ </h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required"/>
+                    <span>Họ và tên</span>
                 </div>
-                <div class="fc_form-input">
-                    <label for="fullName"> Họ và tên</label><br>
-                    <input type="text" name="fullName" required><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" name="userEmail" required><br>
-                    <label for="help">Chúng tôi có thể giúp gì được cho bạn?</label><br>
-                   
-                    
-                    <textarea class="message" name="message" placeholder="Nội dung"></textarea>
+                <div class="inputBox">
+                    <input type="email" name="" required="required"/>
+                    <span>Email</span>
                 </div>
-                
-            </fieldset>
-            <div class="fc_form-text">
-                <button class="submit-btn">Submit</button>
-            </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Nội dung lời nhắn ...</span>
+                </div>
+                <div class="inputBox">
+                   
+                    <input type="submit" name="callWindowAlert()" value="send"/>  
+                </div>
+
             </form>
         </div>
-        </section>
-      
+        <div class="imgBox">
+        <img src="contacGirl.png" />
+        </div>
+    </div>
+
     <footer class="footer">
         <p>🌱</p>
         <p>copyright © group 2024</p>
     </footer>
-
-    <script>
-        let plant = document.querySelector(".plant");
-        plant.onclick = function(){
-            let navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
+</div>
     
-  </body>
+</body>
+<script>
+    let plant = document.querySelector(".plant");
+    plant.onclick = function(){
+        let navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+<script src="contactus.js"></script>
 
 </html>
+
