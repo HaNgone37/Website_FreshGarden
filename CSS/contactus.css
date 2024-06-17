@@ -22,7 +22,7 @@ body{
     max-width: 2000px;
     margin: 0px;
     height: 600px;
-    background: #06632e;
+    background-image: url('../Images/anhnen9.jpg');;
     display: flex;
     justify-content: space-between;
     align-items: center;
