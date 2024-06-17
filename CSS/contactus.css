@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #043017;
+    
 }
 .app{
     width: 100%;
@@ -135,7 +135,7 @@ body{
 }
 .container .imgBox img {
     position: absolute;
-    margin-left: -20%;
+    margin-left: -40%;
     bottom: 0;
     height: 90%;
     max-height: 85%;
