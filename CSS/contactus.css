@@ -40,7 +40,7 @@ body{
     padding: 0 0 0 75px;
 }
 .container .formBox form h2{
-    color: #fff;
+    color: #162938;
     font-weight: 500;
     font-size: 2em;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ body{
     outline: none;
     border: none;
     width: 100%;
-    color: #fff;
+    color: #162938;
     padding-bottom: 10px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -74,13 +74,13 @@ body{
 }
 
 .container .formBox form .inputBox input[type="submit"] {
-    background: #fff;
+    background: #162938;
     padding: 8px 20px;
     margin-top: -10px;
     width: 100px;
     cursor: pointer;
-    background: #fff;
-    color: #06632e;
+    background: #162938;
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
     border: none;
@@ -88,7 +88,7 @@ body{
     letter-spacing: 4px;
 }
 .container .formBox form .inputBox input[type="submit"]:focus {
-    background: #fff;
+    background: #162938;
     color: #111;
 }
 .container .formBox form .inputBox span {
@@ -107,14 +107,14 @@ body{
 .container .formBox form .inputBox input:valid ~ span,
 .container .formBox form .inputBox textarea:valid ~ span {
     transform: translateY(-24px);
-    color: #fff;
+    color: #162938;
     font-size:14px;
 }
 .container .formBox form .inputBox input:focus,
 .container .formBox form .inputBox textarea:focus,
 .container .formBox form .inputBox input:valid,
 .container .formBox form .inputBox textarea:valid {
-    border-bottom-color: #fff;
+    border-bottom-color: #162938;
 }
 .container .imgBox {
     position: relative;
