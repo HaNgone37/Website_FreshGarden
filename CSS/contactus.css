@@ -21,7 +21,7 @@ body{
     width: 100%;
     max-width: 2000px;
     margin: 0px;
-    height: 600px;
+    height: 800px;
     background-image: url('../Images/anhnen9.jpg');;
     display: flex;
     justify-content: space-between;
