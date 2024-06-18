@@ -1,7 +1,8 @@
+
 //Lay element
 const loginForm = document.getElementById("loginForm");
 const loginMail = document.getElementById("loginMail");
-const loginPass = document.getElementById("loginPass");
+const loginPass = document.getElementById("LoginPass");
 
 //Lang nghe su kien submit form 
 loginForm.addEventListener("submit", function(e){
@@ -13,7 +14,7 @@ loginForm.addEventListener("submit", function(e){
 
     //Tim kiem email va mat khau xem co ton tai hay khong
     const findUser = userLocal.find(
-        (user) => user.userEmail === loginMail.value && user.userPassword === loginPass.value);
+        (user) => user.userEmail === loginMail?.value && user.userPassword === loginPass?.value);
 
     if(!findUser){
         alert("Email hoặc mật khẩu không đúng!");
