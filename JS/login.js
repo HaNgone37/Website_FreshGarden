@@ -1,24 +1,28 @@
-
-//Lay element
+// Lấy element
 const loginForm = document.getElementById("loginForm");
 const loginMail = document.getElementById("loginMail");
-const loginPass = document.getElementById("LoginPass");
+const loginPass = document.getElementById("LoginPass"); 
 
-//Lang nghe su kien submit form 
+// Lắng nghe sự kiện submit form 
 loginForm.addEventListener("submit", function(e){
-    //Ngan chan su kien load lai trang
+    // Ngăn chặn sự kiện load lại trang
     e.preventDefault();
 
-    //Lay du lieu tu Local ve
+    // Lấy dữ liệu từ Local về
     const userLocal = JSON.parse(localStorage.getItem("users")) || [];
 
-    //Tim kiem email va mat khau xem co ton tai hay khong
+    // Log giá trị để kiểm tra
+    console.log("Email: ", loginMail.value);
+    console.log("Password: ", loginPass.value);
+    console.log("Users in Local Storage: ", userLocal);
+
+    // Tìm kiếm email và mật khẩu xem có tồn tại hay không
     const findUser = userLocal.find(
         (user) => user.userEmail === loginMail.value && user.userPassword === loginPass.value);
 
-    if(!findUser){
+    if (!findUser) {
         alert("Email hoặc mật khẩu không đúng!");
-    } else{
-        window.location.href="index.html";
+    } else {
+        window.location.href = "index.html";
     }
-})
+});
